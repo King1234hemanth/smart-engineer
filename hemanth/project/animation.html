@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            display: inline-block;
+            background: blue;
+            border: 1px solid green;
+            width: 150px;
+            height: 100px;
+        }
+
+        .royal{
+            background: orangered;
+            z-index: -1;
+        }
+        .suman{
+            background: yellow;
+            transform: translateX(50%)
+        }
+        .royal1{
+            background: green;
+            z-index: 100;
+        }
+        .royal{
+            background: blue;
+            border-radius: 50px;
+            transform: translateX(50%);
+            z-index: -1;
+            animation: Animation 10s 2  2s ease-in-out;
+        }
+        .suman:hover{
+            background: red;
+            z-index: 1;
+        }
+        @keyframes Animation {
+            0%{
+                transform: translateY(-250px);
+                background: black;
+            }
+            50%{
+                transform: translateY(500px);
+                background: pink;
+            }
+            75%{
+                transform: translateY(-250px);
+                background: orange;
+            }
+            100%{
+                transform: translateY(-250px);
+                background: green;
+                border-radius: 0px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="royal"></div>
+    <div class="suman"></div>
+    <div class="royal1"></div>
+    
+    
+    
+</body>
+</html>

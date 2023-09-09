@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer-box{
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #999;
+            margin: 30px;
+        }
+        .box{
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 2px solid #333;
+        }
+        .element{
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            border: 1px solid #888;
+            margin: 300px;
+        }
+        .inner-box{
+            width: 100px;
+            height: 100px;
+            background-color: #f0f0f0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="element">Margin adds space around the element</div>
+    <div class="outer-box">outer box with padding and Margin 
+        <div class="inner-box">inner box with margins</div>
+        <div class="inner-box">another inner box</div>
+    </div>
+</body>
+</html>
